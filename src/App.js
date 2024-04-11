@@ -4,6 +4,7 @@ import PageActions from "./component/header";
 import Typography from "@mui/material/Typography";
 import Category from "./component/category";
 import Grid from "@mui/material/Grid";
+import Mostlypurchased from "./component/mostlypurchased";
 function App() {
   return (
     <div className="App">
@@ -54,6 +55,9 @@ function App() {
           />
         </div>
       </div>
+      
+      <Mostlypurchased/>
+      
     </div>
   );
 }
