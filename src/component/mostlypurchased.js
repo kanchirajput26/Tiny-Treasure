@@ -6,12 +6,12 @@ import CardContent from '@mui/material/CardContent';
 const cardsData = [
   {
     imageSrc: "https://s3-alpha-sig.figma.com/img/244a/9f16/5989f6860eda36a69240a3614d8a26c9?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gpsXLoMyK0qjjhs9tRUjvE4wxoG2dhEbsk~DrmZI70GMHaeWZJM7sYsRneq1lV5Fs-1gtfqPJK6P0PlmrM8sqJFlI78geJt0JVcAUGmG0~0~pmY2mQgQ-6d0WXCLEaUHP9XgJsKYBlobMNY-EB9LMcg-z83WWlh5ivIv7Um1g6nz9RTVQdDubBtiQycPe5kP-s4WGAHqABgaZ05gUbWA0mbqpuLh3FhFrw5UA7HJf98QYN-DkAUkbyriMXmXVb-I3NSFSVGSH5EBNWgkze0nWOhNBKetZoRZV0XxfzNAAOOJcpWjUVUJgxr5qJDP~fNWmpARrdNEkOf3WTucD5HYeg__",
-    title: "Animal Printed Dungaree",
+    title: "Animal Printed Du..",
     price: 720
   },
   {
     imageSrc: "https://s3-alpha-sig.figma.com/img/934a/7711/9a3886e3e0fa7f6c20c91df1beb56682?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=in4iynMYSxp0L5cV98tZ-tESvynJTkX3yp0XH4TssFMl1D03WAZCqF2eQ83FwQSUAoYJBYMj15Ikk36VlykXsYTnT3xkmL2gR3LcGfON0beUTbEBphTTzC2LW-AIITHOHsCb1RcYZQ1igPzSFfrRfqfLat5yA~yi9-XpznXoePpEXaAdFLyiECyqoYBJhN4UBVD9fWswowRzm0Ym0W8J9TwxVtZm9ArwUBQ3vvuxW--35PC-JkbpqGyMOp2yzfMh2HewDwLQ7bFSBkgrgPMV0rGs9xvfxoqRXHMy~K0QP15EB8JH8lhFw5KL4vPmCRq3omrX9gFx~5-2-SQZSkwUcw__",
-    title: "Animal Printed Dungaree",
+    title: "Animal Printed Du..",
     price: 720
   },
   {
@@ -22,12 +22,12 @@ const cardsData = [
   {
     imageSrc: "https://s3-alpha-sig.figma.com/img/ece5/baf9/bd6ed02b814541bd7b661b0aee86f1bd?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i9I3DR5ULb5oFz9lqjBPHoqrdMP8VSqYgrowOnbdNdFhZ~ms2KtLSaaEo4L2QEqEvXK8kljuV7F1fj-RqdGC1Pi2Oeyvfml9rn053g2LPKzgn309eeNSK0VmGHkKhwk9jqMZGPDJ8YHVA5H0q4xgsbOVrVrRqiEhbsoj9zAG3k1OxsaJsIH2BqXJ8RJKOybWd8t990GW~awGQGC8rR47m5-SZVVnz4M34CXmfKIfsX~eSTNbfd1fbA0l17DqfTX2~7vHgLxs5eW6-wBkDglvp5WjCMFk7iafexh0TOO4G3TTPHDp-ijLNJU7UiLu9fkcnyQ4Y4-r5vkP-wQmHxA~-w__",
     title: "2 - Piece Set",
-    price: 720
+    price: 799
   },
   {
     imageSrc: "https://s3-alpha-sig.figma.com/img/9a92/e4b5/ef77814740ef27f2256a9626aab48664?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OQyHLw~kAxUe48TUpMCWzEgPcZz4M7uLpzjompUloYqWV4D7qek4X3h5ySRiy5RL6E2YdJkYbCNl3jypI6n0QC9i7ggGuOEKEI8p9zeC-dqW6i5AZ6DiJLJAVwJ1WN51VDM7FPdX3k4PPj2BkkhVgkEU9N8qplJlXiMs~7ouwByVb4XNKEy5jgeDSix4DvzAHHI0xlAjDFsnzrX0ejWYKWpv6cZMBEXI-cK9Uy97FbSBt8RQPiWDEmYdrb3SxWhX4PzBGOO4wOUrPeMl~T-~smW0eYIMmJtojlLYpGFZYJLaRdXrZdUnNDGPyyqXPHcEmLHfSKEgRd~riFU6UNxp-A__",
     title: "2 - Piece Printed Set",
-    price: 720
+    price: 1299
   },
   {
     imageSrc: "https://s3-alpha-sig.figma.com/img/9a92/e4b5/ef77814740ef27f2256a9626aab48664?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OQyHLw~kAxUe48TUpMCWzEgPcZz4M7uLpzjompUloYqWV4D7qek4X3h5ySRiy5RL6E2YdJkYbCNl3jypI6n0QC9i7ggGuOEKEI8p9zeC-dqW6i5AZ6DiJLJAVwJ1WN51VDM7FPdX3k4PPj2BkkhVgkEU9N8qplJlXiMs~7ouwByVb4XNKEy5jgeDSix4DvzAHHI0xlAjDFsnzrX0ejWYKWpv6cZMBEXI-cK9Uy97FbSBt8RQPiWDEmYdrb3SxWhX4PzBGOO4wOUrPeMl~T-~smW0eYIMmJtojlLYpGFZYJLaRdXrZdUnNDGPyyqXPHcEmLHfSKEgRd~riFU6UNxp-A__",
@@ -39,25 +39,26 @@ const cardsData = [
 
 export default function Mostlypurchased() {
   return (
-<Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px' }}>
-  {cardsData.map((item, index) => (
-    <Card key={index} sx={{ width: 'calc(16.63% - 10px)' }} variant="outlined">
-      <CardContent>
-        <img
-          src={item.imageSrc}
-          alt="category"
-          style={{ width: "100%", height: "275px", borderRadius: "20px" }}
-        />
-        <p style={{ fontFamily: 'Quicksand', fontStyle: 'normal', fontWeight: 500, fontSize: "20px", lineHeight: "25px", color: '#000000' }}>
-          {item.title}
-        </p>
-        <p style={{ fontFamily: 'Quicksand', fontStyle: 'normal', fontWeight: 700, fontSize: "22px", lineHeight: "28px", color: "#000000" }}>
-          {item.price}
-        </p>
-      </CardContent>
-    </Card>
-  ))}
-</Box>
-
+    <div style={{ paddingTop: '80px' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', gap: '10px' }}>
+        {cardsData.map((item, index) => (
+          <Card key={index} sx={{ width: 'calc(16.63% - 10px)' }} variant="outlined">
+            <CardContent>
+              <img
+                src={item.imageSrc}
+                alt="category"
+                style={{ width: "100%", height: "220px", borderRadius: "20px" }}
+              />
+              <p style={{ fontFamily: 'Quicksand', fontStyle: 'normal', fontWeight: 500, fontSize: "20px", lineHeight: "25px", color: '#000000' }}>
+                {item.title}
+              </p>
+              <p style={{ fontFamily: 'Quicksand', fontStyle: 'normal', fontWeight: 700, fontSize: "22px", lineHeight: "28px", color: "#000000" }}>
+                {item.price}
+              </p>
+            </CardContent>
+          </Card>
+        ))}
+      </Box>
+    </div>
   );
 }

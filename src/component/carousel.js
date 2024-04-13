@@ -1,9 +1,11 @@
+
 import React from "react";
 import { Carousel, Grid } from "antd";
 import { Col, Row } from "antd";
+
 const contentStyle = {
   margin: 0,
-  height: "160px",
+  height: "374px",
   color: "#fff",
   lineHeight: "160px",
   textAlign: "center",
@@ -14,22 +16,47 @@ const MyCarousel = () => {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
+
   return (
-    <Carousel autoplay afterChange={onChange}>
-      <div>
-        <h3 style={contentStyle}>1</h3> 
-      </div>
-      <div>
-        <h3 style={contentStyle}>2</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>3</h3>
-      </div>
-      <div>
-        <h3 style={contentStyle}>4</h3>
-      </div>
-    </Carousel>
+    <Row gutter={16}>
+      <Col span={12}>
+        <Carousel autoplay afterChange={onChange}>
+          <div>
+            <h3 style={contentStyle}>1</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>2</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>3</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>4</h3>
+          </div>
+        </Carousel>
+      </Col>
+      <Col span={12}>
+        <Carousel autoplay afterChange={onChange}>
+          <div>
+            <h3 style={contentStyle}>A</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>B</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>C</h3>
+          </div>
+          <div>
+            <h3 style={contentStyle}>D</h3>
+          </div>
+        </Carousel>
+      </Col>
+    </Row>
   );
 };
+
 export default MyCarousel;
+
+
+
 

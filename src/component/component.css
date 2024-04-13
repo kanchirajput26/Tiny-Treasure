@@ -1,0 +1,47 @@
+.product-card {
+  width: 200px; /* Adjust width as needed */
+  margin-right: 10px; /* Adjust spacing between cards */
+}
+
+.product-image {
+  position: relative;
+  height: 200px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #FFD25D;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}
+
+.product-details {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+.product-details h3 {
+  margin: 0;
+}
+
+.product-details p {
+  margin: 0;
+}
+
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+  }
+  
+  /* Adjust individual ProductCard styles if necessary */
+  

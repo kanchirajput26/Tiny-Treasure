@@ -4,17 +4,17 @@ const divStyle = {
   border: "None",
   backgroundColor: "#0000000D",
   borderRadius: "50%",
-  width: "100px",
+  width: "200px",
   height: "100px",
   backgroundSize: "cover",
   backgroundPosition: "center",
-  marginRight: "5px",
+  marginRight: "60px",
   marginLeft:"10px" 
 };
 
 export default function Category() {
   return (
-    <div style={{ marginLeft: 0, display: "flex", flexDirection: "row" }}>
+    <div style={{ marginLeft: '50px', display: "flex", flexDirection: "row" }}>
       {" "}
       <div style={divStyle}>
         <img
