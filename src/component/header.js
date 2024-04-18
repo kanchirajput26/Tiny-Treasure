@@ -11,25 +11,22 @@ import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined"; 
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import MoreIcon from "@mui/icons-material/MoreVert";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
-  borderRadius: theme.shape.borderRadius,
+  borderRadius: "10px",
   backgroundColor: alpha(theme.palette.common.white, 0.15),
+  border: `1.5px solid rgba(233,199,255,0.4)`,
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
-  marginRight: theme.spacing(2),
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(3),
-    width: "auto",
-  },
+  right: 0, // Align to the right
+  width: "auto",
+  
 }));
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
@@ -44,9 +41,9 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
+  fontFamily: "'Quicksand', sans-serif", // Set font style to Quicksand
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
@@ -55,6 +52,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     },
   },
 }));
+
 
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -120,24 +118,22 @@ export default function PrimarySearchAppBar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <IconButton size="large" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="error">
-            <MailIcon />
+        <IconButton size="large" aria-label="show shopping cart" color="inherit">
+          <Badge badgeContent={0} color="error">
+            <ShoppingCartOutlinedIcon />
           </Badge>
         </IconButton>
-        <p>Messages</p>
+        <p>Shopping Cart</p>
       </MenuItem>
       <MenuItem>
         <IconButton
           size="large"
-          aria-label="show 17 new notifications"
+          aria-label="like"
           color="inherit"
         >
-          <Badge badgeContent={17} color="error">
-            <NotificationsIcon />
-          </Badge>
+          <FavoriteBorderIcon />
         </IconButton>
-        <p>Notifications</p>
+        <p>Like</p>
       </MenuItem>
       <MenuItem onClick={handleProfileMenuOpen}>
         <IconButton
@@ -147,7 +143,7 @@ export default function PrimarySearchAppBar() {
           aria-haspopup="true"
           color="inherit"
         >
-          <AccountCircle />
+          <AccountCircleOutlinedIcon />
         </IconButton>
         <p>Profile</p>
       </MenuItem>
@@ -155,47 +151,52 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1, marginBottom:5 }}>
-      <AppBar position="static">
+    <Box sx={{ flexGrow: 1, marginBottom: 5 }}>
+      <AppBar position="static" sx={{ backgroundColor: "white", color: "black" }}>
         <Toolbar>
           <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            Tiny Treasure
-          </Typography>
+           variant="h6"
+           noWrap
+           component="div"
+           sx={{
+             display: { xs: "none", sm: "block" },
+             fontFamily: "'Quicksand', sans-serif", // Set font style to Quicksand
+             fontWeight: 'bold',
+           }}
+         >
+           <span style={{ color: "#AB91F1" }}>Tiny</span>{" "}
+           <span style={{ color: "black" }}>Treasure</span>
+         </Typography>
+         
+          
           <div style={{ display: "flex", alignItems: "center" }}>
             <Search>
               <SearchIconWrapper>
                 <SearchIcon />
               </SearchIconWrapper>
               <StyledInputBase
-                placeholder="Search…"
+                placeholder="Search for Products, Br"
                 inputProps={{ "aria-label": "search" }}
               />
             </Search>
           </div>
           <Box sx={{ flexGrow: 1 }} />
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ display: { xs: "none", md: "flex" }, gap: "16px" }}>
             <IconButton
               size="large"
-              aria-label="show 4 new mails"
+              aria-label="show shopping cart"
               color="inherit"
             >
-              <Badge badgeContent={4} color="error">
-                <MailIcon />
+              <Badge badgeContent={0} color="error">
+                <ShoppingCartOutlinedIcon />
               </Badge>
             </IconButton>
             <IconButton
               size="large"
-              aria-label="show 17 new notifications"
+              aria-label="like"
               color="inherit"
             >
-              <Badge badgeContent={17} color="error">
-                <NotificationsIcon />
-              </Badge>
+              <FavoriteBorderIcon />
             </IconButton>
             <IconButton
               size="large"
@@ -206,7 +207,7 @@ export default function PrimarySearchAppBar() {
               onClick={handleProfileMenuOpen}
               color="inherit"
             >
-              <AccountCircle />
+              <AccountCircleOutlinedIcon />
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -228,3 +229,6 @@ export default function PrimarySearchAppBar() {
     </Box>
   );
 }
+
+
+
