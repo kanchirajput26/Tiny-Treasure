@@ -33,7 +33,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 2),
   height: "100%",
   position: "absolute",
-  pointerEvents: "none",
+  
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -151,7 +151,7 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1, marginBottom: 5 }}>
+    <Box sx={{ flexGrow: 1, marginBottom: 8 }}>
       <AppBar position="static" sx={{ backgroundColor: "white", color: "black" }}>
         <Toolbar>
           <Typography
@@ -187,9 +187,9 @@ export default function PrimarySearchAppBar() {
               aria-label="show shopping cart"
               color="inherit"
             >
-              <Badge badgeContent={0} color="error">
+              
                 <ShoppingCartOutlinedIcon />
-              </Badge>
+              
             </IconButton>
             <IconButton
               size="large"

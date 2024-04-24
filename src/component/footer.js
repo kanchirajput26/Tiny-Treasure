@@ -9,10 +9,10 @@ const Footer = () => {
           <div style={{ flex: 1 }}>
             <h3 style={{ color:'#000', fontSize: '16px'}}>CUSTOMER</h3>
             <ul style={{ listStyle: 'none', padding: 0 }}>
-              <li><a href="#" style={{ color: '#000', textDecoration: 'none' }}>Contact Us</a></li>
-              <li><a href="#" style={{ color: '#000', textDecoration: 'none' }}>Track Order</a></li>
-              <li><a href="#" style={{ color: '#000', textDecoration: 'none' }}>Return Order</a></li>
-              <li><a href="#" style={{ color: '#000', textDecoration: 'none' }}>Cancel Order</a></li>
+              <li><a href="#" style={{ color: '#000', textDecoration: 'none', fontSize: '14px' }}>Contact Us</a></li>
+              <li><a href="#" style={{ color: '#000', textDecoration: 'none', fontSize: '14px'}}>Track Order</a></li>
+              <li><a href="#" style={{ color: '#000', textDecoration: 'none', fontSize: '14px'}}>Return Order</a></li>
+              <li><a href="#" style={{ color: '#000', textDecoration: 'none', fontSize: '14px'}}>Cancel Order</a></li>
             </ul>
           </div>
           <div style={{ flex: 1 }}>
@@ -45,7 +45,7 @@ const Footer = () => {
             <div>Google Play</div>
           </button>
           <button style={{ backgroundColor: 'black', color: 'white', padding: '10px 20px', borderRadius: '10px' }}>
-            <div style={{ fontSize: 'px' }}>Download on</div>
+            <div style={{ fontSize: '10px' }}>Download on</div>
             <div>Apple Store</div>
           </button>
         </div>
